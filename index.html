@@ -469,5 +469,20 @@ window.addEventListener('scroll',function(){
   document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20);
 });
 </script>
+
+<style>
+.wa-float{
+  position:fixed;bottom:24px;right:24px;z-index:999;
+  width:56px;height:56px;border-radius:50%;
+  background:#25d366;color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:1.6rem;
+  box-shadow:0 4px 16px rgba(37,211,102,0.35);
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 8px 28px rgba(37,211,102,0.4)}
+</style>
+<a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">💬</a>
+
 </body>
 </html>
